@@ -1,103 +1,205 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>E-Mandor</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <!-- Unduh Font Awesome dibawah -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <!-- Ketik code Anda dibawah -->
-    <div class="header">
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="Mandor-designstyle-i-love-m.png">
-          <div class="header-list">
-            <ul>
-              <li>Tentang</li>
-              <li>Pelayanan</li>
-              <li>Hubungi Kami</li>
-            </ul>
-          </div>
-        </div>
-        <div class="header-right">
-          <a href="#" class="login">Log in</a>
-        </div>
-      </div>
-    </div>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>BELAJAR CODING.</h1>
-        <h1>BELAJAR MENJADI LEBIH KREATIF.</h1>
-        <p>Progate adalah platform online untuk belajar pemrograman.</p>
-        <p>Kami menawarkan lingkungan pemrograman yang lengkap untuk mempermudah Anda memulai.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Daftar dengan Email</a>
-          <p>atau</p>
-          <a href="#" class="btn facebook">
-            <span class="fa fa-facebook"></span>
-          Daftar dengan Facebook
-          </a>
-          <a href="#" class="btn twitter">
-            <span class="fa fa-twitter"></span>
-          Daftar dengan Twitter
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Cari tau dari mana anda mau memulai!</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
-            </div>
-            <p class="txt-contents">Dua bahasa yang digunakan untuk membangun struktur dan design tambilan website anda.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>JQuery</p>
-            </div>
-            <p class="txt-contents">JavaScript Library yang cepat, kaya akan fitur dan mudah digunakan untuk menangani animasi dan permintaan Ajax.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="txt-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="txt-contents">Bahasa scripting "open-source" yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class=heading>
-          <h2>Apakah anda siap untuk menjadi programer yang handal?</h2>
-          <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif</h3>
-        </div>
-        <span class="btn-message">Mulai Belajar</span>
-      </div>
-    </div>
-    <hr>
-    <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to code, learn to be creative.</p>
-    </div>
-  </footer>
-  </body>
-</html>
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Ketik code Anda dibawah */
+.header {
+  background-color: rgba(34,49,52,0.9);
+  height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.logo {
+  width: 124px;
+  padding-bottom: 20px;
+  height: 65px;
+  float: left;
+  padding-right: 10px;
+}
+
+.header-list li {
+  list-style: none;
+  color: white;
+  float: left;
+  padding: 25px 20px;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: white;
+  display: block;
+}
+
+.top-wrapper {
+  background-image: url(sambut-mea-mandor-dan-tukang-bangunan-harus-bersertifikat-Ig8j57xsK9.jpg);
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-wrapper h1 {
+  color: white;
+  opacity: 0.7;
+  letter-spacing: 5px;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  color: white;
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  padding: 12px 24px;
+  margin: 5px;
+  padding: 12px 24px;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+  opacity: 0.8;
+}
+
+.facebook {
+  background-color: #3b5998;
+  opacity: 0.8;
+}
+
+.twitter {
+  background-color: #55acee;
+  opacity: 0.8;
+}
+
+.lesson-wrapper {
+  text-align: center;
+  height: 580px;
+  background-color: #f7f7f7;
+}
+
+.lesson-wrapper h2 {
+  font-weight: normal;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson {
+  width: 25%;
+  float: left;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  display: inline-block;
+  font-size: 15px;
+  width: 80%;
+  color: #b3aeb5;
+  padding-top: 20px;
+}
+
+.message-wrapper {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.message-wrapper h2 {
+  font-weight: normal;
+  color: #5f5d60;
+}
+
+.message-wrapper h3 {
+  color: #5f5d60;
+  margin-bottom: 30px;
+}
+
+.btn-message {
+  background-color: #5dca88;
+  padding: 15px 40px;
+  color: white;
+  box-shadow: 0px 7px #1a7940;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-message:active {
+  box-shadow: none;
+  top: 7px;
+  position: relative;
+}
+
+hr {
+  background-color: #eee;
+  opacity: 0.1;
+}
+
+footer {
+  padding-top: 30px;
+}
+
+footer img {
+  width: 124px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #b3aeb5;
+}
